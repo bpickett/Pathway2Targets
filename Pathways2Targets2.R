@@ -35,7 +35,7 @@ sig_paths <- as.vector(in_data$Name)
 sig_dbs <- as.vector(in_data$SourceDB)
 
 for(i in 1:length(sig_dbs)){
-  #i <- 1
+  #i <- 7
   print(paste0("Working...Pathway ",i," of ", length(sig_dbs)," : ",sig_paths[i]))
   
   if(sig_dbs[i] == "KEGG"){
@@ -55,6 +55,7 @@ for(i in 1:length(sig_dbs)){
       mart=mart,
       unique = TRUE)
   }else if(sig_dbs[i] == "Reactome"){
+    #print("in Reactome loop")
     if(length(humanReactome@entries[[sig_paths[i]]])==0){
       print(paste0("Skipping...Pathway ",i,"of ", length(sig_dbs)," : ",sig_paths[i]," -- No Protein Data"))
       next()
@@ -114,14 +115,14 @@ for(i in 1:length(sig_dbs)){
     print(paste0("Error: no valid pathway: ",sig_dbs[i]))
     next;
   }
-  entrez.genes <- db_entrezID
-  mart <- useDataset("hsapiens_gene_ensembl", useMart("ensembl"))
-  genes <- getBM(
-    filters="entrezgene_id",
-    attributes=c("ensembl_gene_id", "entrezgene_id"),#, "hgnc_symbol", "uniprot_gn_id"),#, "go_id", "name_1006"),
-    values=db_entrezID,
-    mart=mart,
-    unique = TRUE)
+#  entrez.genes <- db_entrezID
+#  mart <- useDataset("hsapiens_gene_ensembl", useMart("ensembl"))
+#  genes <- getBM(
+#    filters="entrezgene_id",
+#    attributes=c("ensembl_gene_id", "entrezgene_id"),#, "hgnc_symbol", "uniprot_gn_id"),#, "go_id", "name_1006"),
+#    values=db_entrezID,
+#    mart=mart,
+#    unique = TRUE)
   
   #remove duplicate entrezIDs
   genes <- genes[!duplicated(genes$entrezgene_id), ]
