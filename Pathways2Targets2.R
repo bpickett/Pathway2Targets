@@ -17,6 +17,7 @@ outfile <- paste0(infile,"-Treatments.tsv")
 setwd("~/fsl_groups/fslg_PickettLabGroup/spia")
 #setwd("~/")
 merged_drugs <- as.data.frame(NULL)
+trac_vector <- as.vector(c(1,2,3,9,10,11,18,19,20,26,27,28))
 
 #df_init <- data.frame(matrix(ncol = 11, nrow = 0))
 #colnames(df_init) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Approved_Indications","Pathway_DB","Pathway_Name")
@@ -136,6 +137,17 @@ for(i in 1:length(sig_dbs)){
       id
       approvedSymbol
       approvedName
+      associatedDiseases {
+        count
+      }
+      tractability {
+        modality
+        id
+        value
+      }
+      safetyLiabilities {
+        event
+      }
     knownDrugs {
       uniqueDrugs
       rows {
@@ -179,9 +191,19 @@ for(i in 1:length(sig_dbs)){
       
       for(y in 1:length(target_data[["target"]][["knownDrugs"]][["rows"]])){
         #y <- 1
+        tractability <- 0
         unique_chembl <- as.vector(NULL)
         inter_col <- as.vector(unlist(target_data[["target"]][["knownDrugs"]][["rows"]][[y]][["drug"]]))
         inter_col <- as.character(inter_col)
+        #sum tractability at "approved", "advanced clinical trials", or "phase 1 trials" for SM, Ab, PR, and OC
+        for(z in 1:length(trac_vector)){
+          #z <- 1
+          if(length(target_data[["target"]][["tractability"]])>0){
+              if(target_data[["target"]][["tractability"]][[z]][["value"]]=="TRUE"){
+                tractability <- tractability+1
+              }
+          }
+        }
         #make sure to only store unique records to 
         if(length(unique_chembl) == 0){
           unique_chembl <- inter_col[1]
@@ -189,7 +211,7 @@ for(i in 1:length(sig_dbs)){
           # if(length(inter_col == 5)){
           #   inter_col[6] <- as.character("N/A")
           # }
-          temp_row <- c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],inter_col,sig_dbs[i], sig_paths[i])
+          temp_row <- c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],target_data[["target"]][["associatedDiseases"]][["count"]],tractability,length(target_data[["target"]][["safetyLiabilities"]]),target_data[["target"]][["knownDrugs"]][["uniqueDrugs"]],inter_col,sig_dbs[i], sig_paths[i])
           temp_row <- as.data.frame(t(temp_row))
           merged_drugs <- as.data.frame(rbind(merged_drugs,temp_row),stringsAsFactors = FALSE, drop = FALSE)
           #write.table(df_init, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
@@ -203,7 +225,7 @@ for(i in 1:length(sig_dbs)){
           if(length(inter_col == 5)){
             inter_col[6] <- as.character("N/A")
           }
-          temp_row <- c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],inter_col,sig_dbs[i], sig_paths[i])
+          temp_row <- c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],target_data[["target"]][["associatedDiseases"]][["count"]],tractability,length(target_data[["target"]][["safetyLiabilities"]]),target_data[["target"]][["knownDrugs"]][["uniqueDrugs"]],inter_col,sig_dbs[i], sig_paths[i])
           temp_row <- as.data.frame(t(temp_row))
           merged_drugs <- as.data.frame(rbind(merged_drugs,temp_row),stringsAsFactors = FALSE)
         }
@@ -221,7 +243,8 @@ for(i in 1:length(sig_dbs)){
     rm(target_data)
   }
 }
-colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
+colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
+#colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
 merged_drugs <- unique(merged_drugs)
 write.table(merged_drugs, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
 print("Done")  
