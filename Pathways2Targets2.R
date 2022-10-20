@@ -14,6 +14,7 @@ if(length(args)==0){
 infile <- args[1]
 #infile <- "edgeR_dge_results_treatmentRSV_A549-treatmentmock_RSV_A549.txt_entrez.tsv_2020-05-03_12-57-17_SPIA_Results.csv"
 outfile <- paste0(infile,"-Treatments.tsv")
+outfile1 <- paste0(infile,"-RankedTargets.tsv")
 setwd("~/fsl_groups/fslg_PickettLabGroup/spia")
 #setwd("~/")
 merged_drugs <- as.data.frame(NULL)
@@ -243,8 +244,152 @@ for(i in 1:length(sig_dbs)){
     rm(target_data)
   }
 }
-colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
-#colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
-merged_drugs <- unique(merged_drugs)
+#colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
+##colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
+#merged_drugs <- unique(merged_drugs)
+#write.table(merged_drugs, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
+print("Data gathering...complete")
+print("Computing data...")
+
+
+###########
+#sort the existing table by the following order of criteria
+# 1)  Pathway_Count,
+# 2)  Tractability_Count,
+# 2)  Number_Approved,
+# 3)  Safety_Liabilities,
+# 4)  Number_Unique_Drugs,
+# 5)  Associated_Disease_Count,
+# 6)  Number_phase3,
+# 7)  Number_phase2,
+# 8)  Number_phase1,
+# 9)  Number_phase4
+
+#Sorting step 1: iterate over whole table
+#find counts for each target across all pathways
+merged_drugs2 <- subset(merged_drugs, select = -c(Drug_ID,
+                                                   Drug_Name,
+                                                   Is_FDA_Approved,
+                                                   Highest_Clinical_Trial_Phase,
+                                                   Has_Been_Withdrawn
+                                                   ))
+merged_drugs2 <- unique(merged_drugs2)
+merged_drugs2$Pathway_Name <- as.character(merged_drugs2$Pathway_Name)
+merged_drugs2$Target_Symbol <- as.character(merged_drugs2$Target_Symbol)
+target1 <- as.vector(merged_drugs2$Target_Symbol)
+target1 <- unique(target1)
+num_pathways <- as.vector(as.numeric(NULL))
+for(a in 1:length(target1)){
+  #a <- 3
+  merged_drugs_temp <- as.data.frame(NULL)
+  merged_drugs_temp <- subset(merged_drugs2, select = c(Pathway_Name,Target_Symbol))
+  #merged_drugs_temp$Pathway_Name <- as.character(merged_drugs_temp$Pathway_Name)
+  #merged_drugs_temp$Target_Symbol <- as.character(merged_drugs_temp$Target_Symbol)
+  merged_drugs_temp <- subset(merged_drugs_temp, Target_Symbol == target1[a])
+  num_pathways[a] <- nrow(merged_drugs_temp)
+  #merged_drugs_temp <- subset(merged_drugs2, select = Pathway_Name & Target_Symbol %in% c(target1[a]))
+}
+rm(merged_drugs_temp)
+rm(merged_drugs2)
+num_path_df <- as.data.frame(cbind(num_pathways,target1))
+num_path_df$num_pathways <- as.numeric(as.character(num_path_df$num_pathways))
+num_path_df$target1 <- as.character(num_path_df$target1)
+merged_drugs <- merge(merged_drugs,num_path_df, by.x='Target_Symbol', by.y='target1')
+
+#Step2: iterate through each target
+merged_drugs3 <- subset(merged_drugs, select = c(Target_Symbol,
+                                                  Drug_Name,
+                                                  Is_FDA_Approved,
+                                                  Highest_Clinical_Trial_Phase,
+                                                  Has_Been_Withdrawn
+    ),
+    stringsAsFactors = FALSE
+  )
+num4v <- as.vector(as.numeric(NULL))
+num3v <- as.vector(as.numeric(NULL))
+num2v <- as.vector(as.numeric(NULL))
+num1v <- as.vector(as.numeric(NULL))
+numApprovedv <- as.vector(as.numeric(NULL))
+
+merged_drugs3 <- unique(merged_drugs3, stringsAsFactors = FALSE)
+merged_drugs3$Target_Symbol<- as.character(merged_drugs3$Target_Symbol)
+merged_drugs3$Target_Symbol<- as.character(merged_drugs3$Target_Symbol)
+merged_drugs3$Is_FDA_Approved<- as.character(merged_drugs3$Is_FDA_Approved)
+merged_drugs3$Highest_Clinical_Trial_Phase<- as.numeric(as.character(merged_drugs3$Highest_Clinical_Trial_Phase))
+
+for(b in 1:length(target1)){
+  #b <- 1
+  phase_temp <- as.data.frame(subset(merged_drugs3, Target_Symbol == target1[b]), stringsAsFactors = FALSE)
+  for(c in 1:nrow(phase_temp)){
+    numApprovedv[b] <- as.numeric(sum(phase_temp$Is_FDA_Approved == "TRUE"))
+    num3v[b] <- as.numeric(sum(phase_temp$Highest_Clinical_Trial_Phase == 3))
+    num2v[b] <- as.numeric(sum(phase_temp$Highest_Clinical_Trial_Phase == 2))
+    num1v[b] <- as.numeric(sum(phase_temp$Highest_Clinical_Trial_Phase == 1))
+    num4v[b] <- as.numeric(sum(phase_temp$Highest_Clinical_Trial_Phase == 4))
+  }
+}
+rm(merged_drugs3)
+rm(phase_temp)
+num_df <- as.data.frame(cbind(target1,numApprovedv, num3v, num2v, num1v, num4v))
+merged_drugs <- merge(merged_drugs,num_df, by.x='Target_Symbol', by.y='target1')
+
+colnames(merged_drugs) <- c("Target_Symbol","Target_ID","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name","Target_in_Pathways","num_Approved_Drugs","num_Phase3","num_Phase2","num_Phase1","num_Phase4")
+merged_drugs$Tractability_Count <- as.numeric(as.character(merged_drugs$Tractability_Count))
+merged_drugs$Safety_Liabilities <- as.numeric(as.character(merged_drugs$Safety_Liabilities))
+merged_drugs$Number_Unique_Drugs <- as.numeric(as.character(merged_drugs$Number_Unique_Drugs))
+merged_drugs$num_Approved_Drugs <- as.numeric(as.character(merged_drugs$num_Approved_Drugs))
+merged_drugs$num_Phase3 <- as.numeric(as.character(merged_drugs$num_Phase3))
+merged_drugs$num_Phase2 <- as.numeric(as.character(merged_drugs$num_Phase2))
+merged_drugs$num_Phase1 <- as.numeric(as.character(merged_drugs$num_Phase1))
+merged_drugs$num_Phase4 <- as.numeric(as.character(merged_drugs$num_Phase4))
+merged_drugs$Associated_Disease_Count <- as.numeric(as.character(merged_drugs$Associated_Disease_Count))
+
+merged_drugs <- merged_drugs[order(-merged_drugs$Target_in_Pathways,
+                                     -merged_drugs$Tractability_Count,
+                                     -merged_drugs$num_Approved_Drugs,
+                                     merged_drugs$Safety_Liabilities,
+                                     -merged_drugs$Number_Unique_Drugs,
+                                     -merged_drugs$Associated_Disease_Count,
+                                     -merged_drugs$num_Phase3,
+                                     -merged_drugs$num_Phase2,
+                                     -merged_drugs$num_Phase1,
+                                     -merged_drugs$num_Phase4
+),]
 write.table(merged_drugs, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
-print("Done")  
+
+merged_drugs1 <- as.data.frame(merged_drugs, stringsAsFactors = FALSE)
+merged_drugs1 <- as.data.frame(select(merged_drugs1, select = -c("Drug_ID",
+                                                                "Drug_Name",
+                                                                "Is_FDA_Approved",
+                                                                "Highest_Clinical_Trial_Phase",
+                                                                "Has_Been_Withdrawn",
+                                                                "Pathway_DB",
+                                                                "Pathway_Name"
+                                                                )
+                                      ),stringsAsFactors = FALSE
+                               )
+merged_drugs1$Tractability_Count <- as.numeric(as.character(merged_drugs1$Tractability_Count))
+merged_drugs1$Safety_Liabilities <- as.numeric(as.character(merged_drugs1$Safety_Liabilities))
+merged_drugs1$Number_Unique_Drugs <- as.numeric(as.character(merged_drugs1$Number_Unique_Drugs))
+merged_drugs1$num_Approved_Drugs <- as.numeric(as.character(merged_drugs1$num_Approved_Drugs))
+merged_drugs1$num_Phase3 <- as.numeric(as.character(merged_drugs1$num_Phase3))
+merged_drugs1$num_Phase2 <- as.numeric(as.character(merged_drugs1$num_Phase2))
+merged_drugs1$num_Phase1 <- as.numeric(as.character(merged_drugs1$num_Phase1))
+merged_drugs1$num_Phase4 <- as.numeric(as.character(merged_drugs1$num_Phase4))
+merged_drugs1$Associated_Disease_Count <- as.numeric(as.character(merged_drugs1$Associated_Disease_Count))
+
+merged_drugs1 <- unique(merged_drugs1)
+merged_drugs1 <- merged_drugs1[order(-merged_drugs1$Target_in_Pathways,
+                                     -merged_drugs1$Tractability_Count,
+                                     -merged_drugs1$num_Approved_Drugs,
+                                     merged_drugs1$Safety_Liabilities,
+                                     -merged_drugs1$Number_Unique_Drugs,
+                                     -merged_drugs1$Associated_Disease_Count,
+                                     -merged_drugs1$num_Phase3,
+                                     -merged_drugs1$num_Phase2,
+                                     -merged_drugs1$num_Phase1,
+                                     -merged_drugs1$num_Phase4
+                                     ),]
+write.table(merged_drugs1, file = outfile1, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
+
+print("Computing data...complete")
