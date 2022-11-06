@@ -12,13 +12,22 @@ if(length(args)==0){
 }
 #setwd("~/Desktop")
 infile <- args[1]
-#infile <- "edgeR_dge_results_treatmentRSV_A549-treatmentmock_RSV_A549.txt_entrez.tsv_2020-05-03_12-57-17_SPIA_Results.csv"
+#infile <- "CRC_edgeR.txt_entrez.tsv_2022-10-08_08-23-30_SPIA_Results.csv"
 outfile <- paste0(infile,"-Treatments.tsv")
 outfile1 <- paste0(infile,"-RankedTargets.tsv")
 setwd("~/fsl_groups/fslg_PickettLabGroup/spia")
 #setwd("~/")
 merged_drugs <- as.data.frame(NULL)
 trac_vector <- as.vector(c(1,2,3,9,10,11,18,19,20,26,27,28))
+
+#define weights
+low <- 0.5
+med <- 1
+hi <- 2
+p3_w <- 1.5
+p2_w <- 1
+p1_w <- .5
+p4_w <- 2
 
 #df_init <- data.frame(matrix(ncol = 11, nrow = 0))
 #colnames(df_init) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Approved_Indications","Pathway_DB","Pathway_Name")
@@ -244,7 +253,7 @@ for(i in 1:length(sig_dbs)){
     rm(target_data)
   }
 }
-#colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
+colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
 ##colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
 #merged_drugs <- unique(merged_drugs)
 #write.table(merged_drugs, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
@@ -344,30 +353,57 @@ merged_drugs$num_Phase1 <- as.numeric(as.character(merged_drugs$num_Phase1))
 merged_drugs$num_Phase4 <- as.numeric(as.character(merged_drugs$num_Phase4))
 merged_drugs$Associated_Disease_Count <- as.numeric(as.character(merged_drugs$Associated_Disease_Count))
 
-merged_drugs <- merged_drugs[order(-merged_drugs$Target_in_Pathways,
-                                     -merged_drugs$Tractability_Count,
-                                     -merged_drugs$num_Approved_Drugs,
-                                     merged_drugs$Safety_Liabilities,
-                                     -merged_drugs$Number_Unique_Drugs,
-                                     -merged_drugs$Associated_Disease_Count,
-                                     -merged_drugs$num_Phase3,
-                                     -merged_drugs$num_Phase2,
-                                     -merged_drugs$num_Phase1,
-                                     -merged_drugs$num_Phase4
+#calculate the weighted score by multiplying metrics in each row by weighting factor (low, med, hi)
+weighted_score_col <- as.vector(as.numeric(NULL))
+for(j in 1:nrow(merged_drugs)){
+  #j <- 1
+  weighted_score <- as.numeric(0)
+  weighted_score <- sum(weighted_score,(merged_drugs$Target_in_Pathways[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$Tractability_Count[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$num_Approved_Drugs[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$Safety_Liabilities[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$Number_Unique_Drugs[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$Associated_Disease_Count[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$num_Phase3[j]*p3_w*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$num_Phase2[j]*p2_w*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$num_Phase1[j]*p1_w*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$num_Phase4[j]*p4_w*med))
+  weighted_score_col[j] <- weighted_score
+}
+merged_drugs$Weighted_Score <- weighted_score_col
+colnames(merged_drugs) <- c("Target_Symbol","Target_ID","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name","Target_in_Pathways","num_Approved_Drugs","num_Phase3","num_Phase2","num_Phase1","num_Phase4","Weighted_Score")
+
+merged_drugs <- merged_drugs[order(-merged_drugs$Weighted_Score,
+                                    -merged_drugs$Target_in_Pathways,
+                                   -merged_drugs$Tractability_Count,
+                                   -merged_drugs$num_Approved_Drugs,
+                                   merged_drugs$Safety_Liabilities,
+                                   -merged_drugs$Number_Unique_Drugs,
+                                   -merged_drugs$Associated_Disease_Count,
+                                   -merged_drugs$num_Phase3,
+                                   -merged_drugs$num_Phase2,
+                                   -merged_drugs$num_Phase1,
+                                   -merged_drugs$num_Phase4
 ),]
 write.table(merged_drugs, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
 
 merged_drugs1 <- as.data.frame(merged_drugs, stringsAsFactors = FALSE)
-merged_drugs1 <- as.data.frame(select(merged_drugs1, select = -c("Drug_ID",
-                                                                "Drug_Name",
-                                                                "Is_FDA_Approved",
-                                                                "Highest_Clinical_Trial_Phase",
-                                                                "Has_Been_Withdrawn",
-                                                                "Pathway_DB",
-                                                                "Pathway_Name"
-                                                                )
-                                      ),stringsAsFactors = FALSE
-                               )
+merged_drugs1$Drug_ID <- NULL
+merged_drugs1$Is_FDA_Approved <- NULL
+merged_drugs1$Highest_Clinical_Trial_Phase <- NULL
+merged_drugs1$Has_Been_Withdrawn <- NULL
+merged_drugs1$Pathway_DB <- NULL
+merged_drugs1$Pathway_Name <- NULL
+#merged_drugs1 <- subset(merged_drugs1, select = -c("Drug_ID",
+#                                                      "Drug_Name",
+#                                                      "Is_FDA_Approved",
+#                                                      "Highest_Clinical_Trial_Phase",
+#                                                      "Has_Been_Withdrawn",
+#                                                      "Pathway_DB",
+#                                                      "Pathway_Name"),
+#                                      stringsAsFactors = FALSE
+#                               )
+merged_drugs1$Drug_Name<- NULL
 merged_drugs1$Tractability_Count <- as.numeric(as.character(merged_drugs1$Tractability_Count))
 merged_drugs1$Safety_Liabilities <- as.numeric(as.character(merged_drugs1$Safety_Liabilities))
 merged_drugs1$Number_Unique_Drugs <- as.numeric(as.character(merged_drugs1$Number_Unique_Drugs))
@@ -377,9 +413,11 @@ merged_drugs1$num_Phase2 <- as.numeric(as.character(merged_drugs1$num_Phase2))
 merged_drugs1$num_Phase1 <- as.numeric(as.character(merged_drugs1$num_Phase1))
 merged_drugs1$num_Phase4 <- as.numeric(as.character(merged_drugs1$num_Phase4))
 merged_drugs1$Associated_Disease_Count <- as.numeric(as.character(merged_drugs1$Associated_Disease_Count))
+merged_drugs1$Weighted_Score <- as.numeric(as.character(merged_drugs1$Weighted_Score))
 
 merged_drugs1 <- unique(merged_drugs1)
-merged_drugs1 <- merged_drugs1[order(-merged_drugs1$Target_in_Pathways,
+merged_drugs1 <- merged_drugs1[order(-merged_drugs1$Weighted_Score,
+                                     -merged_drugs1$Target_in_Pathways,
                                      -merged_drugs1$Tractability_Count,
                                      -merged_drugs1$num_Approved_Drugs,
                                      merged_drugs1$Safety_Liabilities,
