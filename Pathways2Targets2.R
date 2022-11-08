@@ -361,7 +361,7 @@ for(j in 1:nrow(merged_drugs)){
   weighted_score <- sum(weighted_score,(merged_drugs$Target_in_Pathways[j]*med))
   weighted_score <- sum(weighted_score,(merged_drugs$Tractability_Count[j]*med))
   weighted_score <- sum(weighted_score,(merged_drugs$num_Approved_Drugs[j]*med))
-  weighted_score <- sum(weighted_score,(merged_drugs$Safety_Liabilities[j]*med))
+  weighted_score <- sum(weighted_score,(merged_drugs$Safety_Liabilities[j]*hi*-1))
   weighted_score <- sum(weighted_score,(merged_drugs$Number_Unique_Drugs[j]*med))
   weighted_score <- sum(weighted_score,(merged_drugs$Associated_Disease_Count[j]*med))
   weighted_score <- sum(weighted_score,(merged_drugs$num_Phase3[j]*p3_w*med))
