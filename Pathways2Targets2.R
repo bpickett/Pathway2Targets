@@ -46,12 +46,12 @@ sig_paths <- as.vector(in_data$Name)
 sig_dbs <- as.vector(in_data$SourceDB)
 
 for(i in 1:length(sig_dbs)){
-  #i <- 7
+  #i <- 1
   print(paste0("Working...Pathway ",i," of ", length(sig_dbs)," : ",sig_paths[i]))
   
   if(sig_dbs[i] == "KEGG"){
     if(length(humanKEGG@entries[[sig_paths[i]]])==0){
-     print(paste0("Skipping...Pathway ",i,"of ", length(sig_dbs)," : ",sig_paths[i]," -- No Protein Data"))
+     print(paste0("Skipping...Pathway ",i," of ", length(sig_dbs)," : ",sig_paths[i]," -- No Protein Data"))
      next()
     }
     db_entrezID <- as.vector(humanKEGG@entries[[sig_paths[i]]]@protEdges[["src"]])
@@ -158,6 +158,9 @@ for(i in 1:length(sig_dbs)){
       safetyLiabilities {
         event
       }
+      subcellularLocations{
+        location
+      }
     knownDrugs {
       uniqueDrugs
       rows {
@@ -208,11 +211,41 @@ for(i in 1:length(sig_dbs)){
         #sum tractability at "approved", "advanced clinical trials", or "phase 1 trials" for SM, Ab, PR, and OC
         for(z in 1:length(trac_vector)){
           #z <- 1
-          if(length(target_data[["target"]][["tractability"]])>0){
+          if(length(target_data[["target"]][["tractability"]])==0){
+            sm_approved <- "Unknown"
+            sm_advancedClinical <- "Unknown"
+            sm_phase1 <- "Unknown"
+            ab_approved <- "Unknown"
+            ab_advancedClinical <- "Unknown"
+            ab_phase1 <- "Unknown"
+            pr_approved <- "Unknown"
+            pr_advancedClinical <- "Unknown"
+            pr_phase1 <- "Unknown"
+            oc_approved <- "Unknown"
+            oc_advancedClinical <- "Unknown"
+            oc_phase1 <- "Unknown"
+          }else if(length(target_data[["target"]][["tractability"]])>0){
+            sm_approved <- target_data[["target"]][["tractability"]][[1]][["value"]]
+            sm_advancedClinical <- target_data[["target"]][["tractability"]][[2]][["value"]]
+            sm_phase1 <- target_data[["target"]][["tractability"]][[3]][["value"]]
+            ab_approved <- target_data[["target"]][["tractability"]][[8]][["value"]]
+            ab_advancedClinical <- target_data[["target"]][["tractability"]][[9]][["value"]]
+            ab_phase1 <- target_data[["target"]][["tractability"]][[10]][["value"]]
+            pr_approved <- target_data[["target"]][["tractability"]][[18]][["value"]]
+            pr_advancedClinical <- target_data[["target"]][["tractability"]][[19]][["value"]]
+            pr_phase1 <- target_data[["target"]][["tractability"]][[20]][["value"]]
+            oc_approved <- target_data[["target"]][["tractability"]][[26]][["value"]]
+            oc_advancedClinical <- target_data[["target"]][["tractability"]][[27]][["value"]]
+            oc_phase1 <- target_data[["target"]][["tractability"]][[28]][["value"]]
               if(target_data[["target"]][["tractability"]][[z]][["value"]]=="TRUE"){
                 tractability <- tractability+1
               }
           }
+        }
+        if(length(target_data[["target"]][["subcellularLocations"]])==0){
+          subCellLoc <- "No data"
+        }else if(length(target_data[["target"]][["subcellularLocations"]])>0){
+          subCellLoc <- as.vector(unlist(target_data[["target"]][["subcellularLocations"]][[1]]))
         }
         #make sure to only store unique records to 
         if(length(unique_chembl) == 0){
@@ -221,7 +254,7 @@ for(i in 1:length(sig_dbs)){
           # if(length(inter_col == 5)){
           #   inter_col[6] <- as.character("N/A")
           # }
-          temp_row <- c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],target_data[["target"]][["associatedDiseases"]][["count"]],tractability,length(target_data[["target"]][["safetyLiabilities"]]),target_data[["target"]][["knownDrugs"]][["uniqueDrugs"]],inter_col,sig_dbs[i], sig_paths[i])
+          temp_row <- as.vector(c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],target_data[["target"]][["associatedDiseases"]][["count"]],tractability,sm_approved,sm_advancedClinical,sm_phase1,ab_approved,ab_advancedClinical,ab_phase1,pr_approved,pr_advancedClinical,pr_phase1,oc_approved,oc_advancedClinical,oc_phase1,subCellLoc,length(target_data[["target"]][["safetyLiabilities"]]),target_data[["target"]][["knownDrugs"]][["uniqueDrugs"]],inter_col,sig_dbs[i], sig_paths[i]))
           temp_row <- as.data.frame(t(temp_row))
           merged_drugs <- as.data.frame(rbind(merged_drugs,temp_row),stringsAsFactors = FALSE, drop = FALSE)
           #write.table(df_init, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
@@ -235,7 +268,7 @@ for(i in 1:length(sig_dbs)){
           if(length(inter_col == 5)){
             inter_col[6] <- as.character("N/A")
           }
-          temp_row <- c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],target_data[["target"]][["associatedDiseases"]][["count"]],tractability,length(target_data[["target"]][["safetyLiabilities"]]),target_data[["target"]][["knownDrugs"]][["uniqueDrugs"]],inter_col,sig_dbs[i], sig_paths[i])
+          temp_row <- as.vector(c(target_data[["target"]][["id"]],target_data[["target"]][["approvedSymbol"]],target_data[["target"]][["approvedName"]],target_data[["target"]][["associatedDiseases"]][["count"]],tractability,target_data[["target"]][["tractability"]][[1]][["value"]],target_data[["target"]][["tractability"]][[2]][["value"]],target_data[["target"]][["tractability"]][[3]][["value"]],target_data[["target"]][["tractability"]][[9]][["value"]],target_data[["target"]][["tractability"]][[10]][["value"]],target_data[["target"]][["tractability"]][[11]][["value"]],target_data[["target"]][["tractability"]][[18]][["value"]],target_data[["target"]][["tractability"]][[19]][["value"]],target_data[["target"]][["tractability"]][[20]][["value"]],target_data[["target"]][["tractability"]][[26]][["value"]],target_data[["target"]][["tractability"]][[27]][["value"]],target_data[["target"]][["tractability"]][[28]][["value"]],subCellLoc,length(target_data[["target"]][["safetyLiabilities"]]),target_data[["target"]][["knownDrugs"]][["uniqueDrugs"]],inter_col,sig_dbs[i], sig_paths[i]))
           temp_row <- as.data.frame(t(temp_row))
           merged_drugs <- as.data.frame(rbind(merged_drugs,temp_row),stringsAsFactors = FALSE)
         }
@@ -253,7 +286,7 @@ for(i in 1:length(sig_dbs)){
     rm(target_data)
   }
 }
-colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
+colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Associated_Disease_Count","Tractability_Count","sm_approved","sm_advancedClinical","sm_phase1","ab_approved","ab_advancedClinical","ab_phase1","pr_approved","pr_advancedClinical","pr_phase1","oc_approved","oc_advancedClinical","oc_phase1","Subcellular_Location","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
 ##colnames(merged_drugs) <- c("Target_ID","Target_Symbol","Target_Name","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name")
 #merged_drugs <- unique(merged_drugs)
 #write.table(merged_drugs, file = outfile, row.names = FALSE, col.names=TRUE, sep = "\t", append = FALSE)
@@ -342,7 +375,7 @@ rm(phase_temp)
 num_df <- as.data.frame(cbind(target1,numApprovedv, num3v, num2v, num1v, num4v))
 merged_drugs <- merge(merged_drugs,num_df, by.x='Target_Symbol', by.y='target1')
 
-colnames(merged_drugs) <- c("Target_Symbol","Target_ID","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name","Target_in_Pathways","num_Approved_Drugs","num_Phase3","num_Phase2","num_Phase1","num_Phase4")
+colnames(merged_drugs) <- c("Target_Symbol","Target_ID","Target_Name","Associated_Disease_Count","Tractability_Count","sm_approved","sm_advancedClinical","sm_phase1","ab_approved","ab_advancedClinical","ab_phase1","pr_approved","pr_advancedClinical","pr_phase1","oc_approved","oc_advancedClinical","oc_phase1","Subcellular_Location","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name","Target_in_Pathways","num_Approved_Drugs","num_Phase3","num_Phase2","num_Phase1","num_Phase4")
 merged_drugs$Tractability_Count <- as.numeric(as.character(merged_drugs$Tractability_Count))
 merged_drugs$Safety_Liabilities <- as.numeric(as.character(merged_drugs$Safety_Liabilities))
 merged_drugs$Number_Unique_Drugs <- as.numeric(as.character(merged_drugs$Number_Unique_Drugs))
@@ -371,7 +404,7 @@ for(j in 1:nrow(merged_drugs)){
   weighted_score_col[j] <- weighted_score
 }
 merged_drugs$Weighted_Score <- weighted_score_col
-colnames(merged_drugs) <- c("Target_Symbol","Target_ID","Target_Name","Associated_Disease_Count","Tractability_Count","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name","Target_in_Pathways","num_Approved_Drugs","num_Phase3","num_Phase2","num_Phase1","num_Phase4","Weighted_Score")
+colnames(merged_drugs) <- c("Target_Symbol","Target_ID","Target_Name","Associated_Disease_Count","Tractability_Count","sm_approved","sm_advancedClinical","sm_phase1","ab_approved","ab_advancedClinical","ab_phase1","pr_approved","pr_advancedClinical","pr_phase1","oc_approved","oc_advancedClinical","oc_phase1","Subcellular_Location","Safety_Liabilities","Number_Unique_Drugs","Drug_ID","Drug_Name","Is_FDA_Approved","Highest_Clinical_Trial_Phase","Has_Been_Withdrawn","Pathway_DB","Pathway_Name","Target_in_Pathways","num_Approved_Drugs","num_Phase3","num_Phase2","num_Phase1","num_Phase4","Weighted_Score")
 
 merged_drugs <- merged_drugs[order(-merged_drugs$Weighted_Score,
                                     -merged_drugs$Target_in_Pathways,
