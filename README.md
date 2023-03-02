@@ -26,7 +26,8 @@ If the enrichment was calculated with SPIA, the csv file should be used as the i
 
 # Running Pathway2Targets
 The Pathways2Targets.R script requires the graphite, biomaRt, RCurl, stringr, jsonlite, and httr libraries in R and Bioconductor. The following command should be used to run the script from the command-line:
-Rscript --vanilla Pathway2Target.R <path_to_significant_pathway_file>
+
+### Rscript --vanilla Pathway2Target.R <path_to_significant_pathway_file>
 
 Before running this software, the pathway information from the Reactome database should be stored locally through the R graphite library. To do so, load the graphite library in R and use the following command for Reactome:
 prepareSPIA(humanReactome, "Reactome", print.names=TRUE)
