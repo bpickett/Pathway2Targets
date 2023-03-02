@@ -1,0 +1,380 @@
+"Target_Symbol"	"Target_ID"	"Target_Name"	"Associated_Disease_Count"	"Tractability_Count"	"sm_approved"	"sm_advancedClinical"	"sm_phase1"	"ab_approved"	"ab_advancedClinical"	"ab_phase1"	"pr_approved"	"pr_advancedClinical"	"pr_phase1"	"oc_approved"	"oc_advancedClinical"	"oc_phase1"	"Subcellular_Location"	"Safety_Liabilities"	"Number_Unique_Drugs"	"Target_in_Pathways"	"num_Approved_Drugs"	"num_Phase3"	"num_Phase2"	"num_Phase1"	"num_Phase4"	"Weighted_Score"
+"TP53"	"ENSG00000141510"	"tumor protein p53"	2433	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	2	8	6	0	3	5	0	0	2457.5
+"IL6"	"ENSG00000136244"	"interleukin 6"	2249	4	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	2	8	1	1	3	0	0	1	2265.5
+"VEGFA"	"ENSG00000112715"	"vascular endothelial growth factor A"	2082	5	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Secreted"	1	11	1	4	1	0	0	4	2110.5
+"CD4"	"ENSG00000010610"	"CD4 molecule"	2010	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	5	1	1	2	2	0	1	2027
+"IFNG"	"ENSG00000111537"	"interferon gamma"	1875	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	3	2	1	0	1	1	1	1887.5
+"CD40LG"	"ENSG00000102245"	"CD40 ligand"	1702	4	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	5	1	0	2	3	0	0	1718
+"NFKB1"	"ENSG00000109320"	"nuclear factor kappa B subunit 1"	1695	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	1	1	0	1	0	0	0	1699.5
+"IL1B"	"ENSG00000125538"	"interleukin 1 beta"	1670	4	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cytoplasm"	0	4	1	2	1	0	0	2	1686.5
+"ESR1"	"ENSG00000091831"	"estrogen receptor 1"	1614	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Nucleus"	19	41	1	14	0	0	0	14	1666
+"MMP9"	"ENSG00000100985"	"matrix metallopeptidase 9"	1584	7	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	2	3	1	0	2	1	0	0	1595
+"IL10"	"ENSG00000136634"	"interleukin 10"	1575	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	1580
+"MTOR"	"ENSG00000198793"	"mechanistic target of rapamycin kinase"	1493	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Endoplasmic reticulum membrane"	1	25	1	1	2	6	0	1	1534
+"BCL2"	"ENSG00000171791"	"BCL2 apoptosis regulator"	1486	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Mitochondrion outer membrane"	1	7	1	1	4	0	0	1	1505
+"AKT1"	"ENSG00000142208"	"AKT serine/threonine kinase 1"	1480	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	4	14	3	0	2	2	0	0	1500
+"PTGS2"	"ENSG00000073756"	"prostaglandin-endoperoxide synthase 2"	1455	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Microsome membrane"	37	75	1	11	0	0	0	11	1494
+"CXCL8"	"ENSG00000169429"	"C-X-C motif chemokine ligand 8"	1382	5	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	1	2	1	0	0	2	0	0	1390
+"IL4"	"ENSG00000113520"	"interleukin 4"	1245	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	1	0	0	2	0	0	1251
+"IL17A"	"ENSG00000112115"	"interleukin 17A"	1225	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Secreted"	0	9	1	2	0	0	0	2	1244
+"CCL2"	"ENSG00000108691"	"C-C motif chemokine ligand 2"	1214	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	1	1	1	0	0	1	0	0	1218
+"MMP2"	"ENSG00000087245"	"matrix metallopeptidase 2"	1186	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Secreted"	1	1	1	0	1	0	0	0	1193.5
+"NR3C1"	"ENSG00000113580"	"nuclear receptor subfamily 3 group C member 1"	1145	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform Alpha]: Cytoplasm"	42	71	1	15	0	0	0	15	1183
+"PPARG"	"ENSG00000132170"	"peroxisome proliferator activated receptor gamma"	1132	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	18	35	1	7	0	0	0	7	1158
+"FASLG"	"ENSG00000117560"	"Fas ligand"	1133	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	1	1	0	0	1	0	0	1137
+"ICAM1"	"ENSG00000090339"	"intercellular adhesion molecule 1"	1100	3	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	2	2	2	0	1	1	0	0	1105.5
+"IFNA1"	"ENSG00000197919"	"interferon alpha 1"	1064	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	1071
+"SOD1"	"ENSG00000142168"	"superoxide dismutase 1"	1052	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	0	1	0	0	0	1057.5
+"STAT3"	"ENSG00000168610"	"signal transducer and activator of transcription 3"	1045	3	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	1	1	0	0	1	0	0	1049
+"AR"	"ENSG00000169083"	"androgen receptor"	1027	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	40	34	1	12	0	0	0	12	1023
+"FN1"	"ENSG00000115414"	"fibronectin 1"	995	4	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Secreted"	0	5	1	1	1	2	1	1	1012
+"JAK2"	"ENSG00000096968"	"Janus kinase 2"	953	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Endomembrane system"	2	23	3	8	0	0	0	8	1004
+"VDR"	"ENSG00000111424"	"vitamin D receptor"	937	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	17	1	8	0	0	0	8	982
+"IL18"	"ENSG00000150782"	"interleukin 18"	947	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	1	0	1	1	1	0	956
+"CSF2"	"ENSG00000164400"	"colony stimulating factor 2"	939	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	4	1	0	2	2	0	0	951
+"PIK3CA"	"ENSG00000121879"	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"	900	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytosol"	2	32	1	3	3	3	0	3	950.5
+"CD44"	"ENSG00000026508"	"CD44 molecule (Indian blood group)"	939	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	1	2	0	0	0	1	0	944.5
+"CCND1"	"ENSG00000110092"	"cyclin D1"	937	3	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	1	2	0	0	0	1	0	941.5
+"RPL17"	"ENSG00000265681"	"ribosomal protein L17"	927	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	941
+"CASP3"	"ENSG00000164305"	"caspase 3"	930	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	2	1	1	0	0	1	0	0	934
+"NCAM1"	"ENSG00000149294"	"neural cell adhesion molecule 1"	912	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	2	2	0	0	2	0	0	921
+"NOS2"	"ENSG00000007171"	"nitric oxide synthase 2"	885	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	3	1	0	2	1	0	0	898
+"PGR"	"ENSG00000082175"	"progesterone receptor"	799	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	4	26	1	9	0	0	0	9	850
+"FGF2"	"ENSG00000138685"	"fibroblast growth factor 2"	825	5	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Secreted"	0	1	1	0	1	0	0	0	833.5
+"CXCL10"	"ENSG00000169245"	"C-X-C motif chemokine ligand 10"	817	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	1	2	1	0	0	2	0	0	823
+"MAPK3"	"ENSG00000102882"	"mitogen-activated protein kinase 3"	810	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	2	5	3	0	0	2	3	0	821.5
+"MUC1"	"ENSG00000185499"	"mucin 1, cell surface associated"	805	4	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Apical cell membrane"	0	4	1	0	1	3	0	0	818.5
+"IL13"	"ENSG00000169194"	"interleukin 13"	797	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	7	1	0	3	3	0	0	814.5
+"IL1A"	"ENSG00000115008"	"interleukin 1 alpha"	809	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	2	1	0	1	1	0	0	814.5
+"TUBB4A"	"ENSG00000104833"	"tubulin beta 4A class IVa"	719	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	59	1	10	0	0	0	10	813
+"SRC"	"ENSG00000197122"	"SRC proto-oncogene, non-receptor tyrosine kinase"	758	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	1	11	1	4	0	0	0	4	786
+"PPARA"	"ENSG00000186951"	"peroxisome proliferator activated receptor alpha"	754	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	12	25	1	7	0	0	0	7	782
+"MAPK8"	"ENSG00000107643"	"mitogen-activated protein kinase 8"	767	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	3	2	0	0	3	0	0	780
+"IL33"	"ENSG00000137033"	"interleukin 33"	769	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	3	1	0	1	2	0	0	778.5
+"CCR2"	"ENSG00000121807"	"C-C motif chemokine receptor 2"	752	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	10	1	0	1	7	0	0	777.5
+"CSF1R"	"ENSG00000182578"	"colony stimulating factor 1 receptor"	733	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	1	19	1	6	0	0	0	6	775
+"IL2RA"	"ENSG00000134460"	"interleukin 2 receptor subunit alpha"	751	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Membrane"	0	8	1	4	0	0	0	4	773
+"HMGB1"	"ENSG00000189403"	"high mobility group box 1"	767	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	1	1	0	1	0	0	0	772.5
+"FLT3"	"ENSG00000122025"	"fms related receptor tyrosine kinase 3"	692	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	39	1	11	0	0	0	11	771
+"MDM2"	"ENSG00000135679"	"MDM2 proto-oncogene"	753	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	3	2	0	1	2	0	0	766.5
+"ITGB2"	"ENSG00000160255"	"integrin subunit beta 2"	751	7	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	2	1	1	0	1	0	1	765
+"ABL1"	"ENSG00000097007"	"ABL proto-oncogene 1, non-receptor tyrosine kinase"	700	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	2	24	2	8	2	0	0	8	754
+"CDK4"	"ENSG00000135446"	"cyclin dependent kinase 4"	708	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	17	1	6	0	0	0	6	749
+"CREBBP"	"ENSG00000005339"	"CREB binding protein"	741	4	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	1	1	0	0	1	0	0	748
+"CD40"	"ENSG00000101017"	"CD40 molecule"	713	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"[Isoform I]: Cell membrane"	1	9	1	0	0	7	1	0	729.5
+"APP"	"ENSG00000142192"	"amyloid beta precursor protein"	690	7	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	11	1	1	7	2	0	1	724.5
+"PTPN11"	"ENSG00000179295"	"protein tyrosine phosphatase non-receptor type 11"	714	4	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	1	2	0	0	0	1	0	719.5
+"MMP1"	"ENSG00000196611"	"matrix metallopeptidase 1"	700	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	3	5	1	2	0	0	0	2	712
+"IL5"	"ENSG00000113525"	"interleukin 5"	699	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	1	2	0	0	0	2	710
+"TNFRSF1A"	"ENSG00000067182"	"TNF receptor superfamily member 1A"	710	4	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	7	1	1	0	0	0	1	0	702.5
+"JAK1"	"ENSG00000162434"	"Janus kinase 1"	641	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Endomembrane system"	0	19	3	7	0	0	0	7	688
+"JAK3"	"ENSG00000105639"	"Janus kinase 3"	657	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Endomembrane system"	0	13	1	3	2	0	0	3	688
+"HGF"	"ENSG00000019991"	"hepatocyte growth factor"	675	4	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"No data"	1	2	1	0	1	1	0	0	682.5
+"TERT"	"ENSG00000164362"	"telomerase reverse transcriptase"	672	2	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	2	1	0	1	1	0	0	679.5
+"IFNB1"	"ENSG00000171855"	"interferon beta 1"	666	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Secreted"	0	1	2	0	0	1	0	0	673
+"IL6ST"	"ENSG00000134352"	"interleukin 6 cytokine family signal transducer"	665	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	1	1	1	0	0	0	1	673
+"LYN"	"ENSG00000254087"	"LYN proto-oncogene, Src family tyrosine kinase"	652	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	1	9	2	2	0	0	0	2	672
+"CSF1"	"ENSG00000184371"	"colony stimulating factor 1"	667	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	1	2	1	0	0	2	0	0	672
+"NR3C2"	"ENSG00000151623"	"nuclear receptor subfamily 3 group C member 2"	629	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	3	16	1	5	0	0	0	5	660
+"TNFSF11"	"ENSG00000120659"	"TNF superfamily member 11"	645	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	1	1	1	0	0	0	1	651
+"PRKDC"	"ENSG00000253729"	"protein kinase, DNA-activated, catalytic subunit"	629	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	1	0	0	1	0	0	636
+"CCR5"	"ENSG00000160791"	"C-C motif chemokine receptor 5"	603	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	14	1	1	5	0	0	1	634.5
+"BCL2L1"	"ENSG00000171552"	"BCL2 like 1"	622	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform Bcl-X(L)]: Mitochondrion inner membrane"	0	3	1	0	3	0	0	0	634.5
+"WEE1"	"ENSG00000166483"	"WEE1 G2 checkpoint kinase"	605	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	3	0	0	1	0	0	615
+"MMP3"	"ENSG00000149968"	"matrix metallopeptidase 3"	605	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	2	1	1	0	1	0	0	0	610.5
+"HLA-DRB1"	"ENSG00000196126"	"major histocompatibility complex, class II, DR beta 1"	597	4	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	3	2	0	1	2	0	0	609.5
+"DNMT3A"	"ENSG00000119772"	"DNA methyltransferase 3 alpha"	596	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	2	1	2	0	0	0	2	609
+"IL6R"	"ENSG00000160712"	"interleukin 6 receptor"	586	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	1	5	1	3	0	0	0	3	602
+"DNMT1"	"ENSG00000130816"	"DNA methyltransferase 1"	584	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	2	1	2	0	0	0	2	598
+"IL15"	"ENSG00000164136"	"interleukin 15"	594	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform IL15-S48AA]: Secreted"	0	1	1	0	0	1	0	0	598
+"PIK3R1"	"ENSG00000145675"	"phosphoinositide-3-kinase regulatory subunit 1"	553	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytosol"	0	24	1	0	3	8	0	0	595.5
+"TOP2A"	"ENSG00000131747"	"DNA topoisomerase II alpha"	534	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	24	2	9	0	0	0	9	593
+"POLE"	"ENSG00000177084"	"DNA polymerase epsilon, catalytic subunit"	561	3	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	5	5	0	0	0	5	591
+"CDK6"	"ENSG00000105810"	"cyclin dependent kinase 6"	548	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	12	1	6	0	0	0	6	582
+"SDC1"	"ENSG00000115884"	"syndecan 1"	567	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	1	1	0	0	0	1	0	572.5
+"IL1R1"	"ENSG00000115594"	"interleukin 1 receptor type 1"	560	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Membrane"	0	3	1	1	0	2	0	1	571
+"IL22"	"ENSG00000127318"	"interleukin 22"	562	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	567
+"SYK"	"ENSG00000165025"	"spleen associated tyrosine kinase"	527	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	1	12	1	2	0	3	1	2	553.5
+"CASP1"	"ENSG00000137752"	"caspase 1"	541	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	3	1	0	0	3	0	0	552
+"OPRM1"	"ENSG00000112038"	"opioid receptor mu 1"	469	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	38	84	1	20	0	0	0	20	542
+"HSP90AA1"	"ENSG00000080824"	"heat shock protein 90 alpha family class A member 1"	514	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	10	2	0	5	2	0	0	541.5
+"RXRA"	"ENSG00000186350"	"retinoid X receptor alpha"	517	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	2	7	1	5	0	0	0	5	541
+"POLD1"	"ENSG00000062822"	"DNA polymerase delta 1, catalytic subunit"	501	3	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	3	5	0	0	0	5	529
+"MAP2K1"	"ENSG00000169032"	"mitogen-activated protein kinase kinase 1"	483	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	17	1	7	0	0	0	7	528
+"PIK3CB"	"ENSG00000051382"	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta"	486	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	29	1	0	3	4	0	0	527.5
+"COL1A2"	"ENSG00000164692"	"collagen type I alpha 2 chain"	518	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Secreted"	0	2	1	2	0	0	0	2	527
+"THRA"	"ENSG00000126351"	"thyroid hormone receptor alpha"	498	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	2	6	1	5	0	0	0	5	521
+"TNFSF13B"	"ENSG00000102524"	"TNF superfamily member 13b"	506	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	5	1	1	2	0	0	1	521
+"TUBB4B"	"ENSG00000188229"	"tubulin beta 4B class IVb"	413	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	59	1	10	0	0	0	10	507
+"NOD2"	"ENSG00000167207"	"nucleotide binding oligomerization domain containing 2"	497	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	2	1	1	0	0	0	1	507
+"MAPK14"	"ENSG00000112062"	"mitogen-activated protein kinase 14"	462	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	21	2	0	2	10	0	0	503
+"CD86"	"ENSG00000114013"	"CD86 molecule"	489	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cell membrane"	0	2	1	2	0	0	0	2	498
+"RARA"	"ENSG00000131759"	"retinoic acid receptor alpha"	465	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	2	9	1	7	0	0	0	7	497
+"NFKB2"	"ENSG00000077150"	"nuclear factor kappa B subunit 2"	483	3	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	2	0	1	0	0	0	490.5
+"MCL1"	"ENSG00000143384"	"MCL1 apoptosis regulator, BCL2 family member"	478	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	2	1	0	2	0	0	0	489
+"CSF3R"	"ENSG00000119535"	"colony stimulating factor 3 receptor"	472	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"[Isoform 2]: Secreted"	0	6	1	3	0	0	0	3	489
+"LCK"	"ENSG00000182866"	"LCK proto-oncogene, Src family tyrosine kinase"	470	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	3	8	1	3	0	0	0	3	488
+"HDAC2"	"ENSG00000196591"	"histone deacetylase 2"	445	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Nucleus"	0	11	2	5	3	0	0	5	482.5
+"CDK2"	"ENSG00000123374"	"cyclin dependent kinase 2"	454	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	3	14	6	0	2	5	0	0	481
+"NPM1"	"ENSG00000181163"	"nucleophosmin 1"	468	3	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	2	1	2	0	0	0	2	480
+"TOP1"	"ENSG00000198900"	"DNA topoisomerase I"	441	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	18	1	4	1	0	0	4	479.5
+"PPIA"	"ENSG00000196262"	"peptidylprolyl isomerase A"	466	5	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cytoplasm"	0	3	1	1	0	0	0	1	478
+"CD80"	"ENSG00000121594"	"CD80 molecule"	463	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Membrane"	0	3	1	2	0	0	0	2	474
+"RPL38"	"ENSG00000172809"	"ribosomal protein L38"	457	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	471
+"PIK3CD"	"ENSG00000171608"	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta"	396	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	45	1	6	2	0	0	6	467
+"CHEK2"	"ENSG00000183765"	"checkpoint kinase 2"	454	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 2]: Nucleus"	0	2	4	0	0	1	1	0	466.5
+"PRKCD"	"ENSG00000163932"	"protein kinase C delta"	450	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	1	5	2	1	0	2	0	1	464
+"HDAC4"	"ENSG00000068024"	"histone deacetylase 4"	432	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Nucleus"	0	9	1	4	3	0	0	4	463.5
+"THRB"	"ENSG00000151090"	"thyroid hormone receptor beta"	429	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	9	1	5	0	0	0	5	459
+"IL4R"	"ENSG00000077238"	"interleukin 4 receptor"	452	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	2	1	1	0	0	0	1	459
+"IL2RB"	"ENSG00000100385"	"interleukin 2 receptor subunit beta"	438	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cell membrane"	0	5	1	2	0	0	0	2	453
+"MAPK1"	"ENSG00000100030"	"mitogen-activated protein kinase 1"	442	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	2	5	1	0	0	2	3	0	452.5
+"DHFR"	"ENSG00000228716"	"dihydrofolate reductase"	432	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Mitochondrion"	0	6	1	2	0	0	0	2	450
+"NR1H4"	"ENSG00000012504"	"nuclear receptor subfamily 1 group H member 4"	433	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	4	8	1	3	0	0	0	3	448
+"TYMS"	"ENSG00000176890"	"thymidylate synthetase"	412	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	10	1	6	0	0	0	6	446
+"SNAP25"	"ENSG00000132639"	"synaptosome associated protein 25"	427	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cytoplasm"	0	5	1	4	0	0	0	4	445
+"HDAC1"	"ENSG00000116478"	"histone deacetylase 1"	419	3	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Nucleus"	5	11	3	5	1	0	0	5	442.5
+"CCR1"	"ENSG00000163823"	"C-C motif chemokine receptor 1"	417	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	3	1	0	0	3	0	0	429
+"AKT2"	"ENSG00000105221"	"AKT serine/threonine kinase 2"	409	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	3	13	2	0	2	2	0	0	428
+"IKBKB"	"ENSG00000104365"	"inhibitor of nuclear factor kappa B kinase subunit beta"	414	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	3	1	0	1	2	0	0	425.5
+"TNFRSF8"	"ENSG00000120949"	"TNF receptor superfamily member 8"	411	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	4	1	1	0	1	0	1	422
+"GHR"	"ENSG00000112964"	"growth hormone receptor"	407	1	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cell membrane"	0	4	1	3	0	0	0	3	422
+"TNFRSF9"	"ENSG00000049249"	"TNF receptor superfamily member 9"	406	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	2	1	0	1	1	0	0	413.5
+"IFNA2"	"ENSG00000188379"	"interferon alpha 2"	404	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	413
+"POLE3"	"ENSG00000148229"	"DNA polymerase epsilon 3, accessory subunit"	382	1	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	5	5	0	0	0	5	410
+"IFNAR1"	"ENSG00000142166"	"interferon alpha and beta receptor subunit 1"	372	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	12	2	7	0	0	0	7	409
+"TNFSF12"	"ENSG00000239697"	"TNF superfamily member 12"	402	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	2	1	0	0	1	1	0	408.5
+"HAVCR2"	"ENSG00000135077"	"hepatitis A virus cellular receptor 2"	397	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	2	1	0	1	1	0	0	405.5
+"FYN"	"ENSG00000010810"	"FYN proto-oncogene, Src family tyrosine kinase"	385	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	6	1	1	0	0	0	1	399
+"PARP1"	"ENSG00000143799"	"poly(ADP-ribose) polymerase 1"	349	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Chromosome"	0	10	3	7	0	0	0	7	388
+"IFNGR1"	"ENSG00000027697"	"interferon gamma receptor 1"	378	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cell membrane"	0	1	2	1	0	0	0	1	387
+"CCL11"	"ENSG00000172156"	"C-C motif chemokine ligand 11"	379	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	384
+"BIRC3"	"ENSG00000023445"	"baculoviral IAP repeat containing 3"	373	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	0	0	1	0	0	379
+"IL23A"	"ENSG00000110944"	"interleukin 23 subunit alpha"	359	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	5	1	3	0	0	0	3	377
+"RPS6KA3"	"ENSG00000177189"	"ribosomal protein S6 kinase A3"	372	4	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	1	1	0	0	0	1	0	376.5
+"RELA"	"ENSG00000173039"	"RELA proto-oncogene, NF-kB subunit"	366	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	2	0	1	0	0	0	374.5
+"POLD3"	"ENSG00000077514"	"DNA polymerase delta 3, accessory subunit"	349	2	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	7	3	4	0	0	0	4	373
+"PRIM1"	"ENSG00000198056"	"DNA primase subunit 1"	344	2	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"No data"	0	7	3	5	0	0	0	5	371
+"IL2RG"	"ENSG00000147168"	"interleukin 2 receptor subunit gamma"	363	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	1	1	0	0	1	0	0	368
+"IL9"	"ENSG00000145839"	"interleukin 9"	360	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	364
+"AURKA"	"ENSG00000087586"	"aurora kinase A"	327	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	2	19	3	0	1	6	0	0	357.5
+"CD27"	"ENSG00000139193"	"CD27 molecule"	353	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	1	1	0	0	1	0	0	357
+"POLE2"	"ENSG00000100479"	"DNA polymerase epsilon 2, accessory subunit"	327	2	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	5	5	0	0	0	5	356
+"TYK2"	"ENSG00000105397"	"tyrosine kinase 2"	320	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytosol"	0	12	2	3	2	0	0	3	351
+"S1PR1"	"ENSG00000170989"	"sphingosine-1-phosphate receptor 1"	312	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	12	1	7	0	0	0	7	351
+"LAMA5"	"ENSG00000130702"	"laminin subunit alpha 5"	340	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Secreted"	0	1	1	1	0	0	0	1	345
+"ITGB1"	"ENSG00000150093"	"integrin subunit beta 1"	331	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	3	1	0	1	2	0	0	343.5
+"POLA1"	"ENSG00000101868"	"DNA polymerase alpha 1, catalytic subunit"	313	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	3	5	0	0	0	5	342
+"POLD2"	"ENSG00000106628"	"DNA polymerase delta 2, accessory subunit"	314	3	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	3	5	0	0	0	5	342
+"CDK1"	"ENSG00000170312"	"cyclin dependent kinase 1"	310	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	12	8	0	2	4	0	0	341
+"IL17RA"	"ENSG00000177663"	"interleukin 17 receptor A"	327	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	1	1	1	0	0	0	1	334
+"POLD4"	"ENSG00000175482"	"DNA polymerase delta 4, accessory subunit"	306	2	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	3	5	0	0	0	5	333
+"PRIM2"	"ENSG00000146143"	"DNA primase subunit 2"	304	2	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	7	3	5	0	0	0	5	331
+"CUL4A"	"ENSG00000139842"	"cullin 4A"	310	3	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	4	1	3	0	0	0	3	327
+"IL17F"	"ENSG00000112116"	"interleukin 17F"	320	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Secreted"	0	2	1	0	1	1	0	0	326.5
+"POLA2"	"ENSG00000014138"	"DNA polymerase alpha 2, accessory subunit"	296	2	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	7	3	4	0	0	0	4	320
+"FCER2"	"ENSG00000104921"	"Fc epsilon receptor II"	305	2	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	1	1	0	0	1	0	0	310
+"CHEK1"	"ENSG00000149554"	"checkpoint kinase 1"	283	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	10	6	0	0	5	1	0	309.5
+"TSLP"	"ENSG00000145777"	"thymic stromal lymphopoietin"	295	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	1	0	1	1	0	0	302.5
+"HCK"	"ENSG00000101336"	"HCK proto-oncogene, Src family tyrosine kinase"	282	6	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Lysosome"	0	6	1	2	0	0	0	2	301
+"CEP290"	"ENSG00000198707"	"centrosomal protein 290"	297	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	0	0	1	0	0	300
+"PLK1"	"ENSG00000166851"	"polo like kinase 1"	280	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	7	3	0	1	2	3	0	298
+"IL21"	"ENSG00000138684"	"interleukin 21"	293	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	298
+"IL12B"	"ENSG00000113302"	"interleukin 12B"	283	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	3	1	1	1	1	0	1	295.5
+"TOP2B"	"ENSG00000077097"	"DNA topoisomerase II beta"	268	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	9	1	4	0	0	0	4	295
+"ATR"	"ENSG00000175054"	"ATR serine/threonine kinase"	277	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	4	6	0	0	2	0	0	292
+"IFNAR2"	"ENSG00000159110"	"interferon alpha and beta receptor subunit 2"	256	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	11	2	7	0	0	0	7	292
+"PTK2B"	"ENSG00000120899"	"protein tyrosine kinase 2 beta"	282	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	1	0	0	1	1	0	291.5
+"NR1H3"	"ENSG00000025434"	"nuclear receptor subfamily 1 group H member 3"	289	5	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	4	3	1	0	0	0	3	0	291.5
+"TNFSF13"	"ENSG00000161955"	"TNF superfamily member 13"	286	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	291
+"XPO1"	"ENSG00000082898"	"exportin 1"	280	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	1	0	0	0	1	289
+"LTBR"	"ENSG00000111321"	"lymphotoxin beta receptor"	285	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	1	1	0	0	0	1	0	288.5
+"FCGR1A"	"ENSG00000150337"	"Fc gamma receptor Ia"	275	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	1	2	0	0	1	0	0	282
+"TNFRSF17"	"ENSG00000048462"	"TNF receptor superfamily member 17"	269	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	4	1	1	1	2	0	1	281.5
+"AURKB"	"ENSG00000178999"	"aurora kinase B"	240	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	18	4	0	2	6	1	0	273.5
+"MAOA"	"ENSG00000189221"	"monoamine oxidase A"	267	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Mitochondrion outer membrane"	20	12	1	9	0	0	0	9	271
+"APEX1"	"ENSG00000100823"	"apurinic/apyrimidinic endodeoxyribonuclease 1"	260	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	1	0	0	1	0	0	268
+"TNFRSF13C"	"ENSG00000159958"	"TNF receptor superfamily member 13C"	260	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	1	1	0	0	1	0	0	264
+"HDAC8"	"ENSG00000147099"	"histone deacetylase 8"	229	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Nucleus"	0	10	1	4	3	0	0	4	261.5
+"MAPK9"	"ENSG00000050748"	"mitogen-activated protein kinase 9"	250	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	3	1	0	0	3	0	0	260
+"CSF2RA"	"ENSG00000198223"	"colony stimulating factor 2 receptor subunit alpha"	247	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cell membrane"	0	2	1	1	0	0	0	1	255
+"TNFRSF4"	"ENSG00000186827"	"TNF receptor superfamily member 4"	241	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	5	1	0	0	5	0	0	253
+"RPSA"	"ENSG00000168028"	"ribosomal protein SA"	238	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cell membrane"	0	3	2	1	0	2	0	1	252
+"CDK5"	"ENSG00000164885"	"cyclin dependent kinase 5"	230	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cytoplasm"	0	7	1	0	1	3	2	0	249.5
+"PIM1"	"ENSG00000137193"	"Pim-1 proto-oncogene, serine/threonine kinase"	237	5	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cytoplasm"	1	3	1	0	0	0	3	0	245.5
+"HDAC7"	"ENSG00000061273"	"histone deacetylase 7"	208	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Nucleus"	0	9	2	4	3	0	0	4	240.5
+"RBX1"	"ENSG00000100387"	"ring-box 1"	221	3	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	4	2	3	0	0	0	3	239
+"RRM2"	"ENSG00000171848"	"ribonucleotide reductase regulatory subunit M2"	227	2	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	5	1	1	0	0	0	1	238
+"TUBA1A"	"ENSG00000167552"	"tubulin alpha 1a"	202	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	19	1	1	4	1	0	1	237
+"IL10RB"	"ENSG00000243646"	"interleukin 10 receptor subunit beta"	233	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	1	1	0	1	0	0	0	236.5
+"HSPA8"	"ENSG00000109971"	"heat shock protein family A (Hsp70) member 8"	222	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	2	1	0	2	0	0	0	230
+"TUBA4A"	"ENSG00000127824"	"tubulin alpha 4a"	194	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	19	1	1	4	1	0	1	228
+"CA1"	"ENSG00000133742"	"carbonic anhydrase 1"	192	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	7	1	6	0	0	0	6	223
+"CSF2RB"	"ENSG00000100368"	"colony stimulating factor 2 receptor subunit beta"	217	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	1	1	0	0	1	0	0	222
+"OPRD1"	"ENSG00000116329"	"opioid receptor delta 1"	225	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	32	26	1	9	0	0	0	9	220
+"IL5RA"	"ENSG00000091181"	"interleukin 5 receptor subunit alpha"	215	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	1	1	1	0	0	0	1	220
+"TNFSF4"	"ENSG00000117586"	"TNF superfamily member 4"	213	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	2	1	0	0	2	0	0	219
+"PIK3R2"	"ENSG00000105647"	"phosphoinositide-3-kinase regulatory subunit 2"	179	2	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"No data"	0	24	1	0	3	8	0	0	218.5
+"DDB1"	"ENSG00000167986"	"damage specific DNA binding protein 1"	199	3	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	4	1	3	0	0	0	3	216
+"CD70"	"ENSG00000125726"	"CD70 molecule"	205	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	3	1	0	0	1	2	0	212
+"PSMB10"	"ENSG00000205220"	"proteasome 20S subunit beta 10"	196	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	211
+"IL13RA2"	"ENSG00000123496"	"interleukin 13 receptor subunit alpha 2"	207	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	1	1	0	1	0	0	0	210.5
+"PIK3R3"	"ENSG00000117461"	"phosphoinositide-3-kinase regulatory subunit 3"	172	2	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Vesicles"	0	24	1	0	3	6	0	0	209.5
+"TNFSF14"	"ENSG00000125735"	"TNF superfamily member 14"	206	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"[Tumor necrosis factor ligand superfamily member 14, membrane form]: Cell membrane"	0	1	1	0	0	1	0	0	209
+"PSMB5"	"ENSG00000100804"	"proteasome 20S subunit beta 5"	179	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cytoplasm"	0	6	7	4	0	0	0	4	208
+"IL3RA"	"ENSG00000185291"	"interleukin 3 receptor subunit alpha"	194	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Membrane"	0	4	1	1	0	2	1	1	206.5
+"RPL22"	"ENSG00000116251"	"ribosomal protein L22"	192	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	206
+"BIRC2"	"ENSG00000110330"	"baculoviral IAP repeat containing 2"	196	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	0	0	1	0	0	204
+"RPS6"	"ENSG00000137154"	"ribosomal protein S6"	189	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	203
+"IL13RA1"	"ENSG00000131724"	"interleukin 13 receptor subunit alpha 1"	196	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	1	1	0	1	0	0	0	199.5
+"PTK6"	"ENSG00000101213"	"protein tyrosine kinase 6"	189	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	1	0	0	0	1	198
+"E2F3"	"ENSG00000112242"	"E2F transcription factor 3"	189	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	1	2	0	1	0	0	0	193.5
+"RPL5"	"ENSG00000122406"	"ribosomal protein L5"	178	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	192
+"PARP2"	"ENSG00000129484"	"poly(ADP-ribose) polymerase 2"	155	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	10	1	7	0	0	0	7	192
+"IL15RA"	"ENSG00000134470"	"interleukin 15 receptor subunit alpha"	184	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	1	1	0	0	1	0	0	188
+"RPL24"	"ENSG00000114391"	"ribosomal protein L24"	173	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	187
+"E2F1"	"ENSG00000101412"	"E2F transcription factor 1"	183	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	1	1	2	0	1	0	0	0	186.5
+"IL31RA"	"ENSG00000164509"	"interleukin 31 receptor A"	179	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	1	1	0	1	0	0	0	184.5
+"YES1"	"ENSG00000176105"	"YES proto-oncogene 1, Src family tyrosine kinase"	168	3	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	6	1	1	0	0	0	1	181
+"P4HB"	"ENSG00000185624"	"prolyl 4-hydroxylase subunit beta"	163	6	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Endoplasmic reticulum"	0	2	1	0	0	2	0	0	174
+"PLK4"	"ENSG00000142731"	"polo like kinase 4"	163	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	3	1	0	0	1	1	0	172.5
+"TNFRSF18"	"ENSG00000186891"	"TNF receptor superfamily member 18"	161	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	2	1	0	0	1	1	0	166.5
+"IRAK4"	"ENSG00000198001"	"interleukin 1 receptor associated kinase 4"	160	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	1	1	0	0	1	0	0	166
+"MAPK10"	"ENSG00000109339"	"mitogen-activated protein kinase 10"	141	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	5	1	0	2	3	0	0	158
+"E2F4"	"ENSG00000205250"	"E2F transcription factor 4"	154	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	1	1	0	1	0	0	0	157.5
+"GRB2"	"ENSG00000177885"	"growth factor receptor bound protein 2"	150	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	1	0	0	1	0	0	156
+"PDPK1"	"ENSG00000140992"	"3-phosphoinositide dependent protein kinase 1"	147	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	2	1	0	0	1	1	0	154.5
+"IL1RL2"	"ENSG00000115598"	"interleukin 1 receptor like 2"	147	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Membrane"	0	2	1	0	1	1	0	0	153.5
+"RPS19"	"ENSG00000105372"	"ribosomal protein S19"	131	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	3	2	1	0	2	0	1	145
+"MAPK11"	"ENSG00000185386"	"mitogen-activated protein kinase 11"	127	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	2	2	1	1	0	0	1	138.5
+"RPS26"	"ENSG00000197728"	"ribosomal protein S26"	123	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	137
+"NR1H2"	"ENSG00000131408"	"nuclear receptor subfamily 1 group H member 2"	128	5	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	3	4	1	0	0	0	4	0	134
+"CDC7"	"ENSG00000097046"	"cell division cycle 7"	119	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	4	4	0	0	2	1	0	133.5
+"HLA-DRB5"	"ENSG00000198502"	"major histocompatibility complex, class II, DR beta 5"	126	3	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	0	1	2	0	0	1	0	0	133
+"RPS20"	"ENSG00000008988"	"ribosomal protein S20"	117	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	131
+"PSMA8"	"ENSG00000154611"	"proteasome 20S subunit alpha 8"	117	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	2	6	0	1	0	1	0	130
+"PTAFR"	"ENSG00000169403"	"platelet activating factor receptor"	144	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cell membrane"	12	1	2	0	1	0	0	0	128.5
+"PPP2CA"	"ENSG00000113575"	"protein phosphatase 2 catalytic subunit alpha"	118	3	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	1	5	0	0	1	0	0	126
+"PSMA6"	"ENSG00000100902"	"proteasome 20S subunit alpha 6"	105	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	120
+"IL11RA"	"ENSG00000137070"	"interleukin 11 receptor subunit alpha"	114	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"[Interleukin-11 receptor subunit alpha]: Membrane"	0	1	1	1	0	0	0	1	120
+"IFNA17"	"ENSG00000234829"	"interferon alpha 17"	112	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	119
+"VAMP2"	"ENSG00000220205"	"vesicle associated membrane protein 2"	112	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"Cytoplasmic vesicle"	0	1	1	1	0	0	0	1	117
+"TEC"	"ENSG00000135605"	"tec protein tyrosine kinase"	108	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	1	0	1	0	0	0	114.5
+"IL20"	"ENSG00000162891"	"interleukin 20"	109	2	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	1	1	0	0	1	0	0	114
+"PSMA4"	"ENSG00000041357"	"proteasome 20S subunit alpha 4"	96	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	111
+"CSNK2A1"	"ENSG00000101266"	"casein kinase 2 alpha 1"	104	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	1	1	1	0	0	1	0	0	110
+"MAPKAPK2"	"ENSG00000162889"	"MAPK activated protein kinase 2"	104	5	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	1	1	0	0	0	1	0	109.5
+"PSMB11"	"ENSG00000222028"	"proteasome subunit beta 11"	94	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	6	0	1	0	1	0	107
+"RPL10"	"ENSG00000147403"	"ribosomal protein L10"	93	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	107
+"RPL32"	"ENSG00000144713"	"ribosomal protein L32"	92	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	106
+"PSMC3"	"ENSG00000165916"	"proteasome 26S subunit, ATPase 3"	94	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	7	0	0	0	1	0	105.5
+"E2F6"	"ENSG00000169016"	"E2F transcription factor 6"	101	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	1	1	0	1	0	0	0	104.5
+"IL1RAP"	"ENSG00000196083"	"interleukin 1 receptor accessory protein"	97	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"[Isoform 1]: Cell membrane"	0	2	1	0	1	1	0	0	103.5
+"PSMA5"	"ENSG00000143106"	"proteasome 20S subunit alpha 5"	88	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	103
+"PSMA3"	"ENSG00000100567"	"proteasome 20S subunit alpha 3"	84	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	99
+"PSMA1"	"ENSG00000129084"	"proteasome 20S subunit alpha 1"	83	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	98
+"PSMD3"	"ENSG00000108344"	"proteasome 26S subunit, non-ATPase 3"	86	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	1	7	0	0	0	1	0	97.5
+"RPL6"	"ENSG00000089009"	"ribosomal protein L6"	83	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	97
+"RPLP1"	"ENSG00000137818"	"ribosomal protein lateral stalk subunit P1"	83	3	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	96
+"MAPKAPK5"	"ENSG00000089022"	"MAPK activated protein kinase 5"	92	3	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	1	1	1	0	0	1	0	0	96
+"IFNLR1"	"ENSG00000185436"	"interferon lambda receptor 1"	92	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Membrane"	0	1	1	0	1	0	0	0	95.5
+"RPS27A"	"ENSG00000143947"	"ribosomal protein S27a"	67	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"[Ubiquitin]: Cytoplasm"	0	3	15	1	0	2	0	1	94
+"RPL27A"	"ENSG00000166441"	"ribosomal protein L27a"	78	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	92
+"PSMB7"	"ENSG00000136930"	"proteasome 20S subunit beta 7"	76	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	91
+"RPL13A"	"ENSG00000142541"	"ribosomal protein L13a"	77	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	91
+"RPLP0"	"ENSG00000089157"	"ribosomal protein lateral stalk subunit P0"	73	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	3	3	1	0	2	0	1	88
+"RPL31"	"ENSG00000071082"	"ribosomal protein L31"	74	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	88
+"PPP5C"	"ENSG00000011485"	"protein phosphatase 5 catalytic subunit"	79	5	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	1	0	0	1	0	0	87
+"RPS27"	"ENSG00000177954"	"ribosomal protein S27"	69	5	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	3	1	0	2	0	1	85
+"CSNK1E"	"ENSG00000213923"	"casein kinase 1 epsilon"	71	4	"TRUE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	2	2	0	0	0	2	85
+"RPS7"	"ENSG00000171863"	"ribosomal protein S7"	70	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	84
+"PSMC2"	"ENSG00000161057"	"proteasome 26S subunit, ATPase 2"	71	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	7	0	0	0	1	0	82.5
+"RPS3"	"ENSG00000149273"	"ribosomal protein S3"	65	5	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	80
+"RPL11"	"ENSG00000142676"	"ribosomal protein L11"	66	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	3	2	1	0	2	0	1	80
+"RPS4X"	"ENSG00000198034"	"ribosomal protein S4 X-linked"	63	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	77
+"RPL4"	"ENSG00000174444"	"ribosomal protein L4"	62	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	76
+"RPS10"	"ENSG00000124614"	"ribosomal protein S10"	62	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	76
+"RPL15"	"ENSG00000174748"	"ribosomal protein L15"	61	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	75
+"PSMD14"	"ENSG00000115233"	"proteasome 26S subunit, non-ATPase 14"	62	4	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	1	7	0	0	0	1	0	74.5
+"RPS6KA2"	"ENSG00000071242"	"ribosomal protein S6 kinase A2"	69	3	"FALSE"	"FALSE"	"TRUE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	1	0	0	0	1	0	74.5
+"RPS13"	"ENSG00000110700"	"ribosomal protein S13"	60	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Endoplasmic reticulum"	0	3	2	1	0	2	0	1	74
+"RPS24"	"ENSG00000138326"	"ribosomal protein S24"	59	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	73
+"E2F5"	"ENSG00000133740"	"E2F transcription factor 5"	69	0	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	1	1	0	1	0	0	0	72.5
+"PPP2CB"	"ENSG00000104695"	"protein phosphatase 2 catalytic subunit beta"	64	1	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	4	0	0	1	0	0	71
+"PSMD2"	"ENSG00000175166"	"proteasome 26S subunit ubiquitin receptor, non-ATPase 2"	59	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"No data"	0	1	7	0	0	0	1	0	70.5
+"RPL7"	"ENSG00000147604"	"ribosomal protein L7"	56	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	70
+"RPS11"	"ENSG00000142534"	"ribosomal protein S11"	56	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	70
+"RPS23"	"ENSG00000186468"	"ribosomal protein S23"	55	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	69
+"RPL3"	"ENSG00000100316"	"ribosomal protein L3"	54	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Nucleus"	0	3	2	1	0	2	0	1	68
+"RPS21"	"ENSG00000171858"	"ribosomal protein S21"	54	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	68
+"NCBP1"	"ENSG00000136937"	"nuclear cap binding protein subunit 1"	62	2	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	2	0	0	1	0	0	68
+"PSMD6"	"ENSG00000163636"	"proteasome 26S subunit, non-ATPase 6"	56	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"No data"	0	1	7	0	0	0	1	0	67.5
+"RPL34"	"ENSG00000109475"	"ribosomal protein L34"	53	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	67
+"RPS29"	"ENSG00000213741"	"ribosomal protein S29"	53	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	67
+"SEM1"	"ENSG00000127922"	"SEM1 26S proteasome subunit"	55	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	7	0	0	0	1	0	66.5
+"RPL12"	"ENSG00000197958"	"ribosomal protein L12"	52	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Golgi apparatus"	0	3	2	1	0	2	0	1	66
+"PSMC6"	"ENSG00000100519"	"proteasome 26S subunit, ATPase 6"	54	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	7	0	0	0	1	0	65.5
+"PSMD1"	"ENSG00000173692"	"proteasome 26S subunit, non-ATPase 1"	54	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	1	7	0	0	0	1	0	65.5
+"RPL13"	"ENSG00000167526"	"ribosomal protein L13"	51	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	65
+"RPS15A"	"ENSG00000134419"	"ribosomal protein S15a"	51	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"No data"	0	3	2	1	0	2	0	1	65
+"PSMA7"	"ENSG00000101182"	"proteasome 20S subunit alpha 7"	49	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	64
+"RPL14"	"ENSG00000188846"	"ribosomal protein L14"	50	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	64
+"RPL9"	"ENSG00000163682"	"ribosomal protein L9"	50	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	64
+"FAU"	"ENSG00000149806"	"FAU ubiquitin like and ribosomal protein S30 fusion"	49	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"[40S ribosomal protein S30]: Nucleus"	0	3	2	1	0	2	0	1	63
+"PSMC5"	"ENSG00000087191"	"proteasome 26S subunit, ATPase 5"	51	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	7	0	0	0	1	0	62.5
+"UBA3"	"ENSG00000144744"	"ubiquitin like modifier activating enzyme 3"	55	4	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytosol"	0	1	1	0	1	0	0	0	62.5
+"PSMB4"	"ENSG00000159377"	"proteasome 20S subunit beta 4"	47	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	62
+"RPS14"	"ENSG00000164587"	"ribosomal protein S14"	48	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	62
+"RPL21"	"ENSG00000122026"	"ribosomal protein L21"	47	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	61
+"RPL37A"	"ENSG00000197756"	"ribosomal protein L37a"	46	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	60
+"RPL26"	"ENSG00000161970"	"ribosomal protein L26"	45	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	59
+"PSMD4"	"ENSG00000159352"	"proteasome 26S subunit ubiquitin receptor, non-ATPase 4"	47	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	1	7	0	0	0	1	0	58.5
+"RPL29"	"ENSG00000162244"	"ribosomal protein L29"	44	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	58
+"PSMD13"	"ENSG00000185627"	"proteasome 26S subunit, non-ATPase 13"	46	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nuclear speckles"	0	1	7	0	0	0	1	0	57.5
+"RPL19"	"ENSG00000108298"	"ribosomal protein L19"	42	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	56
+"RPL41"	"ENSG00000229117"	"ribosomal protein L41"	42	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Endoplasmic reticulum"	0	3	2	1	0	2	0	1	56
+"RPS28"	"ENSG00000233927"	"ribosomal protein S28"	42	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	56
+"RPL18"	"ENSG00000063177"	"ribosomal protein L18"	40	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	54
+"RPS2"	"ENSG00000140988"	"ribosomal protein S2"	40	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	54
+"PSMD12"	"ENSG00000197170"	"proteasome 26S subunit, non-ATPase 12"	42	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Microtubules"	0	1	7	0	0	0	1	0	53.5
+"PSMA2"	"ENSG00000106588"	"proteasome 20S subunit alpha 2"	38	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	53
+"RPL27"	"ENSG00000131469"	"ribosomal protein L27"	39	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	53
+"RPS16"	"ENSG00000105193"	"ribosomal protein S16"	39	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	53
+"PSMB1"	"ENSG00000008018"	"proteasome 20S subunit beta 1"	37	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	52
+"RPS15"	"ENSG00000115268"	"ribosomal protein S15"	38	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	52
+"RPS3A"	"ENSG00000145425"	"ribosomal protein S3A"	38	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	52
+"RPS5"	"ENSG00000083845"	"ribosomal protein S5"	38	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytosol"	0	3	2	1	0	2	0	1	52
+"RPL10A"	"ENSG00000198755"	"ribosomal protein L10a"	37	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	51
+"RPL8"	"ENSG00000161016"	"ribosomal protein L8"	37	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	51
+"PSMB2"	"ENSG00000126067"	"proteasome 20S subunit beta 2"	35	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	50
+"RPL36"	"ENSG00000130255"	"ribosomal protein L36"	36	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	50
+"RPS12"	"ENSG00000112306"	"ribosomal protein S12"	36	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	50
+"PSMB6"	"ENSG00000142507"	"proteasome 20S subunit beta 6"	34	4	"FALSE"	"TRUE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	2	7	0	1	0	1	0	49
+"RPL23A"	"ENSG00000198242"	"ribosomal protein L23a"	35	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	49
+"RPL35A"	"ENSG00000182899"	"ribosomal protein L35a"	34	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	48
+"PSMD7"	"ENSG00000103035"	"proteasome 26S subunit, non-ATPase 7"	36	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleoplasm"	0	1	7	0	0	0	1	0	47.5
+"IFNA8"	"ENSG00000120242"	"interferon alpha 8"	40	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	47
+"RPS4Y1"	"ENSG00000129824"	"ribosomal protein S4 Y-linked 1"	32	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"No data"	0	3	2	1	0	2	0	1	46
+"RPL30"	"ENSG00000156482"	"ribosomal protein L30"	31	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	45
+"RPL35"	"ENSG00000136942"	"ribosomal protein L35"	31	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	45
+"NCBP2"	"ENSG00000114503"	"nuclear cap binding protein subunit 2"	38	3	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	2	0	0	1	0	0	45
+"PSMD11"	"ENSG00000108671"	"proteasome 26S subunit, non-ATPase 11"	33	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Nucleus"	0	1	7	0	0	0	1	0	44.5
+"RPL23"	"ENSG00000125691"	"ribosomal protein L23"	30	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	44
+"RPL28"	"ENSG00000108107"	"ribosomal protein L28"	30	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	44
+"RPL39"	"ENSG00000198918"	"ribosomal protein L39"	30	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	44
+"RPS8"	"ENSG00000142937"	"ribosomal protein S8"	30	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	44
+"HLA-DRB4"	"ENSG00000231021"	"major histocompatibility complex, class II, DR beta 4 "	39	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"No data"	0	1	2	0	0	1	0	0	44
+"RPL37"	"ENSG00000145592"	"ribosomal protein L37"	28	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	42
+"PSMD8"	"ENSG00000099341"	"proteasome 26S subunit, non-ATPase 8"	30	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytosol"	0	1	7	0	0	0	1	0	41.5
+"RPL18A"	"ENSG00000105640"	"ribosomal protein L18a"	27	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	41
+"PSMC1"	"ENSG00000100764"	"proteasome 26S subunit, ATPase 1"	27	3	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Cytoplasm"	0	1	7	0	0	0	1	0	38.5
+"IFNA13"	"ENSG00000233816"	"interferon alpha 13"	30	0	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Unknown"	"Secreted"	0	2	2	0	0	2	0	0	36
+"IFNA5"	"ENSG00000147873"	"interferon alpha 5"	28	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	35
+"RPL36A"	"ENSG00000241343"	"ribosomal protein L36a"	20	4	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"Cytoplasm"	0	3	2	1	0	2	0	1	34
+"IFNA4"	"ENSG00000236637"	"interferon alpha 4"	26	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	33
+"IFNA6"	"ENSG00000120235"	"interferon alpha 6"	25	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	32
+"IFNA21"	"ENSG00000137080"	"interferon alpha 21"	19	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	26
+"IFNA14"	"ENSG00000228083"	"interferon alpha 14"	18	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	25
+"IFNA10"	"ENSG00000186803"	"interferon alpha 10"	17	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	24
+"IFNA7"	"ENSG00000214042"	"interferon alpha 7"	14	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	21
+"IFNA16"	"ENSG00000147885"	"interferon alpha 16"	13	1	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"TRUE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"FALSE"	"Secreted"	0	2	2	0	0	2	0	0	20
