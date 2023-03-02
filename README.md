@@ -33,7 +33,7 @@ prepareSPIA(humanReactome, "Reactome", print.names=TRUE)
 
 Similar local files should be generated for the KEGG, BioCarta, NCI, and Panther signaling pathway databases. Please recognize that only significant Reactome data can be analyzed if using enrichr, while data from all 5 databases can be analyzed when using the SPIA output.
 
-## Upstream Analyses
+## Upstream Analyses (for calculating differential expression & Signaling Pathways)
 ### ARMOR
 Instructions on downloading and installing ARMOR can be found here: https://github.com/csoneson/ARMOR.
 
