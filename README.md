@@ -15,7 +15,7 @@ The required input for running Pathway2Targets is a list of significant signalin
 9) Number of therapeutics in phase 3 (1.5)
 10) Number of therapeutics in phase 4 (2)
 
-The output of Pathway2Targets is two tables that contain 1) a list of targets, prioritized by the weighted score calculated by the 10 criteria; and 2) a list of existing therapeutics in the OpenTargets database that are prioritized by the same 10 criteria.
+The output of Pathway2Targets is two tables that contain 1) a list of targets, prioritized by the weighted score calculated by the 10 criteria; and 2) a list of existing therapeutics in the OpenTargets database that are prioritized by the same 10 criteria. The software will also download the 10 Reactome pathways that contain the most therapeutic targets.
 
 ## Input Requirements
 Pathway2Targets requires a comma-separated value (csv) file as input. This file should contain, at a minimum, a list of 1) pathway names from Reactome, 2) their associated p-values.
