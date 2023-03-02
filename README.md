@@ -20,9 +20,9 @@ The output of Pathway2Targets is two tables that contain 1) a list of targets, p
 ## Input Requirements
 Pathway2Targets requires a comma-separated value (csv) file as input. This file should contain, at a minimum, a list of 1) pathway names from Reactome, 2) their associated p-values.
 
-If the Reactome signaling pathway enrichment was calculated by enrichr, a csv file containing the output table (for Reactome pathways only) should be used as input to this tool. This file is automatically compatible with the software.
+If the Reactome signaling pathway enrichment was calculated by enrichr, a csv file containing the output table (for Reactome pathways only) should be used as input to this tool. This file is automatically compatible with the software. An example enrichr input file, generated from colorectal cancer data, is provided (Example_enrichr_Input.csv).
 
-If the enrichment was calculated with SPIA, the csv file should be used as the input to the software. For convenience, descriptions of the software we used to calculate the differential expression and significant pathways are below:
+If the enrichment was calculated with SPIA, the csv file should be used as the input to the software. An example SPIA input file, generated from colorectal cancer data, is provided (Example_SPIA_Input.csv).
 
 # Running Pathway2Targets
 The Pathways2Targets.R script requires the graphite, biomaRt, RCurl, stringr, jsonlite, and httr libraries in R and Bioconductor. The following command should be used to run the script from the command-line:
@@ -34,6 +34,7 @@ prepareSPIA(humanReactome, "Reactome", print.names=TRUE)
 Similar local files should be generated for the KEGG, BioCarta, NCI, and Panther signaling pathway databases. Please recognize that only significant Reactome data can be analyzed if using enrichr, while data from all 5 databases can be analyzed when using the SPIA output.
 
 ## Upstream Analyses (for calculating differential expression & Signaling Pathways)
+For convenience, descriptions of the software we used to calculate the differential expression and significant pathways are below.
 ### ARMOR
 Instructions on downloading and installing ARMOR can be found here: https://github.com/csoneson/ARMOR.
 
