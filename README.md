@@ -53,3 +53,9 @@ The output of the Get_entrezID_from_ENSG.R script can then be used as input for 
 The following command should be used to run the script from the command-line:
 
 ### Rscript --vanilla SPIA_Code.Rmd <path_to_output_from_'Get_entrezID_from_ENSG.R'_script>
+
+## Operating System Requirements:
+This software is written in R (version 3.6.1 or later). It is platform-independent and has been successfully tested on 64-bit RedHat Linux and on Mac OS 12.0 and 13.0.
+
+## License
+CC0-1.0 license. No restrictions for non-academic use (Public Domain License).
