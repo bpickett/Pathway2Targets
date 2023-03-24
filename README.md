@@ -46,16 +46,16 @@ Instructions on downloading and installing ARMOR can be found here: https://gith
 After successfully completing a run with ARMOR, the edgeR output file should be used as input to the Get_entrezID_from_ENSG.R script. This script retrieves the relevant NCBI Entrez Gene IDs for the Ensembl Gene IDs output by ARMOR, which are required for SPIA to run correctly. 
 The following command should be used to run the script from the command-line:
 
-### Rscript --vanilla Get_entrezID_from_ENSG.R <path_to_ARMOR_output_file>
+#### Rscript --vanilla Get_entrezID_from_ENSG.R <path_to_ARMOR_output_file>
 
 ### Running SPIA
 The output of the Get_entrezID_from_ENSG.R script can then be used as input for the Signaling Pathway Impact Analysis (SPIA) algorithm using the SPIA_Code.Rmd script.
 The following command should be used to run the script from the command-line:
 
-### Rscript --vanilla SPIA_Code.Rmd <path_to_output_from_'Get_entrezID_from_ENSG.R'_script>
+#### Rscript --vanilla SPIA_Code.Rmd <path_to_output_from_'Get_entrezID_from_ENSG.R'_script>
 
-## Operating System Requirements:
+### Operating System Requirements:
 This software is written in R (version 3.6.1 or later). It is platform-independent and has been successfully tested on 64-bit RedHat Linux and on Mac OS 12.0 and 13.0.
 
-## License
+### License
 CC0-1.0 license. No restrictions for non-academic use (Public Domain License).
