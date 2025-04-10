@@ -41,6 +41,8 @@ Instructions on downloading and installing ARMOR can be found here: https://gith
 
 ### Running SPIA
 ARMOR uses the edgeR algorithm to calculate differential expression, and outputs a file named "edgeR_dge.rds". This file contains various information about the read counts for each gene (in each sample), the contrasts that were performed, the differentially-expressed genes, and more. This .rds file should be used as input for the Signaling Pathway Impact Analysis (SPIA) algorithm using the SPIA_Code.Rmd script.
+
+Our edgeR_dge.rds file, which contains data processed from our secondary analysis of a published human colorectal cancer study (PMID: 34737287) is availabe to download at: https://doi.org/10.5281/zenodo.15186609
 The following command should be used to run the script from the command-line:
 
 #### Rscript --vanilla SPIA_Code.Rmd <path_to_'edgeR_dge.rds'_file_output_from_edgeR>
