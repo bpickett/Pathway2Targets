@@ -1,0 +1,132 @@
+library(EnrichmentBrowser)
+library(SummarizedExperiment)
+
+#define input data
+#args=(commandArgs(TRUE))
+#if(length(args)==0){
+  #print("No arguments supplied.")
+#}
+#infile <- args[1]
+infile <- "edgeR_dge.rds"
+
+#read in edgeR object
+setwd("~/Downloads")
+edgeR_data <- readRDS(infile)
+#edgeR_input <- read.csv(infile,header = TRUE,sep = "\t")
+##prep work
+#showAvailableSpecies("enrichr")
+#temp <- as.data.frame(showAvailableCollections(org = "hsa", db = "enrichr", cache = FALSE))
+
+#get genesets
+keggHuman.gs <- getGenesets(org = "hsa", db = "kegg", gene.id.type = "ENTREZID")
+reactomeHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "Reactome_2022", gene.id.type = "ENTREZID")
+#wikiHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "WikiPathways_2024_Human", gene.id.type = "ENTREZID")
+#biocartaHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "BioCarta_2016", gene.id.type = "ENTREZID")
+#disgenetHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "DisGeNET", gene.id.type = "ENTREZID")
+#elsevierHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "Elsevier_Pathway_Collection", gene.id.type = "ENTREZID")
+#nciHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "NCI-Nature_2016", gene.id.type = "ENTREZID")
+#pantherHuman.gs <- getGenesets(org = "hsa", db = "enrichr", lib = "Panther_2016", gene.id.type = "ENTREZID")
+
+##write gene sets to file
+#writeGMT(keggHuman.gs, keggHuman.gmt)
+
+##prepare gene networks
+kegg.grn <- compileGRN(org = "hsa",db = "kegg",act.inh = TRUE,map2entrez = TRUE,keep.type = FALSE,kegg.native = FALSE)
+reactome.grn <- compileGRN(org = "hsa",db = "reactome",act.inh = TRUE,map2entrez = TRUE,keep.type = FALSE,kegg.native = FALSE)
+#wiki.grn <- compileGRN(org = "hsa",db = "wikipathways",act.inh = FALSE,map2entrez = TRUE,keep.type = FALSE,kegg.native = FALSE)
+#pathbank.grn <- compileGRN(org = "hsa",db = "pathbank",act.inh = FALSE,map2entrez = TRUE,keep.type = FALSE,kegg.native = FALSE)
+#THE BELOW DO NOT EXIST
+#biocartaHuman.grn <- compileGRN(org = "hsa", db = "wikipathways", act.inh = TRUE, map2entrez = TRUE, kegg.native = FALSE)
+#disgenetHuman.grn <- compileGRN(org = "hsa", db = "wikipathways", act.inh = TRUE, map2entrez = TRUE, kegg.native = FALSE)
+#elsevierHuman.grn <- compileGRN(org = "hsa", db = "wikipathways", act.inh = TRUE, map2entrez = TRUE, kegg.native = FALSE)
+#nciHuman.grn <- compileGRN(org = "hsa", db = "wikipathways", act.inh = TRUE, map2entrez = TRUE, kegg.native = FALSE)
+#pantherHuman.grn <- compileGRN(org = "hsa", db = "wikipathways", act.inh = TRUE, map2entrez = TRUE, kegg.native = FALSE)
+
+#read in edgeR object from ARMOR
+#edgeR_data <- readRDS("edgeR_dge.rds")
+#create SummarizedExperiment object
+
+#calculate number of comparisons included in edgeR results file
+num_comparisons <- length(edgeR_data[["sg"]]@rowRanges@elementMetadata@listData)-9
+for (i in 1:num_comparisons){
+  print(paste0("Running pathway analysis for comparison ",i," of ",num_comparisons))
+  #i<-1
+  DGEdata <- SummarizedExperiment(assays = edgeR_data[["sg"]]@assays@data@listData[["counts"]], rowRanges = edgeR_data[["sg"]]@rowRanges, colData = edgeR_data[["sg"]]@colData)
+  
+  #add in additional data
+  DGEdata@colData@listData[["GROUP"]] <- DGEdata@colData@listData[["treatment"]] # binary group assignment
+  DGEdata@rowRanges@elementMetadata@listData[["ADJ.PVAL"]] <- DGEdata@rowRanges@elementMetadata@listData[[9+i]]@listData[["FDR"]]#corrected p-value
+  DGEdata@rowRanges@elementMetadata@listData[["FC"]] <- DGEdata@rowRanges@elementMetadata@listData[[9+i]]@listData[["logFC"]]
+  contrast <- DGEdata@rowRanges@elementMetadata@listData[[9+i]]@listData[["contrast"]][1]
+  
+  #manipulate rowData and save as SummarizedExperiment
+  rowData_DF <- as.data.frame(rowData(DGEdata))
+  rowData_DF <- as.data.frame(na.omit(rowData(DGEdata)))
+  rowData_DF <- rowData_DF[!duplicated(rowData_DF[, "entrezid"]),]
+  rownames(rowData_DF) <- rowData_DF$entrezid
+  
+  #manipulate colData
+  colData_DF <- as.data.frame(DGEdata@colData@listData[["names"]],DGEdata@colData@listData[["GROUP"]])
+  colnames(colData_DF) <- "GROUP"
+  
+  #add assay data
+  #assay_df <- as.data.frame(NULL)
+  r <- length(rowData_DF$entrezid)
+  c <- length(colData_DF$GROUP)
+  total <- (length(rowData_DF$entrezid))*(length(colData_DF$GROUP))
+  assay_df <- as.data.frame(matrix(round(runif(n=total, min=1, max=500), 0), nrow=r))
+  rownames(assay_df) <- NULL
+  colnames(assay_df) <- NULL
+  
+  #save as SummarizedExperiment
+  se1 <- SummarizedExperiment(colData = colData_DF, rowData = rowData_DF, assays = assay_df)
+  
+  spia.kegg <- nbea(method = "spia", se = se1, gs = keggHuman.gs, grn = kegg.grn, prune.grn = TRUE, alpha = 0.05, perm = 2000, padj.method = "BH")#padj.method = "BH", padj.method = "bonferroni" 
+  spia.reactome <- nbea(method = "spia", se = se1, gs = reactomeHuman.gs, grn = reactome.grn, prune.grn = TRUE, alpha = 0.05, perm = 2000, padj.method = "BH")
+  sk <- as.data.frame(spia.kegg[["res.tbl"]])
+  sr <- as.data.frame(spia.reactome[["res.tbl"]])
+  
+  #remove duplicate names in GENESET label
+  sr1 <- gsub("_ER.*","",sr$GENE.SET)
+  sr$GENE.SET <- sr1
+  
+  #visualize results
+  #export(spia.kegg, to = "enrichplot")
+  #export(spia.reactome, to = "enrichplot")
+  #exprsHeatmap(expr=assay(se1), grp=as.factor(se1$GROUP))
+  
+  #filter by corrected p-value, add source of significance to each data frame
+  combined_sig_results <- as.data.frame(NULL)
+  if(as.vector(dim(sk)[1])>0){
+    sig_results_KEGG <- sk[sk$PVAL < 0.05, ]
+    if(as.vector(dim(sig_results_KEGG)[1])>0){
+      #sig_results_KEGG <- results_KEGG[results_KEGG$pGFWER < 0.05, ]
+      sig_results_KEGG$SourceDB <- "KEGG"
+    }
+    if(as.vector(dim(sig_results_KEGG)[1])>0){
+      combined_sig_results <- rbind(combined_sig_results,sig_results_KEGG)
+    }
+  }
+  if(as.vector(dim(sr)[1])>0){
+    sig_results_Reactome <- sr[sr$PVAL < 0.05, ]
+    if(as.vector(dim(sig_results_Reactome)[1])>0){
+      sig_results_Reactome$SourceDB <- "Reactome"
+    }
+    #  sig_results_Reactome <- results_Reactome[results_Reactome$pG < 0.05, ]
+    if(as.vector(dim(sig_results_Reactome)[1])>0){
+      combined_sig_results <- rbind(combined_sig_results,sig_results_Reactome)
+    }
+  }
+  
+  time <- gsub(" ", "_", Sys.time())
+  time <- gsub(":", "-", time)
+write.csv(combined_sig_results, file = paste0(infile,"-",contrast,"_",time,"_SPIA_Results.csv"))
+}
+##can combine results
+#combResults(
+#  res.list,
+#  rank.col = configEBrowser("PVAL.COL"),
+#  decreasing = FALSE,
+#  rank.fun = c("comp.ranks", "rel.ranks", "abs.ranks"),
+#  comb.fun = c("mean", "median", "min", "max", "sum")
+#)
